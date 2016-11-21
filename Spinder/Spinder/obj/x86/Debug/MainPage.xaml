@@ -12,7 +12,8 @@
             <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
-        <Button x:ConnectionId='1'                      Content="Button" Margin="115,309,0,299"/>
+        <Button x:ConnectionId='1'                      Content="Button">
+        </Button>
     </Grid>
 </Page>
 

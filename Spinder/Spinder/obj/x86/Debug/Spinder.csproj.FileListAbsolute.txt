@@ -190,3 +190,16 @@ C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\qualifiers
 C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\bin\x86\Debug\Register.xbf
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Register.g.i.cs
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Register.g.cs
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Register.xaml
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Register.xbf
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\bin\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\bin\x86\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\bin\x86\Debug\System.Net.Http.Extensions.dll
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\bin\x86\Debug\System.Net.Http.Primitives.dll
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Microsoft.WindowsAzure.Mobile\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Spinder.csproj.GenerateResource.Cache
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml

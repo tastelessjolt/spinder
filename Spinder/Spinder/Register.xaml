@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Spinder.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Spinder"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="186,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="38" Width="232"/>
+        <TextBox x:Name="first_name" HorizontalAlignment="Left" Margin="186,177,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="35" Width="232" />
+        <TextBox x:Name="last_name" HorizontalAlignment="Left" Margin="186,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="35" Width="232"/>
+        <Button x:Name="submit" Content="Button" HorizontalAlignment="Left" Margin="353,387,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <PasswordBox x:Name="password" PasswordChanged="password_PasswordChanged" HorizontalAlignment="Left" Margin="186,257,0,0" VerticalAlignment="Top" Width="232"/>
+        <TextBlock x:Name="status" HorizontalAlignment="Left" Margin="186,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

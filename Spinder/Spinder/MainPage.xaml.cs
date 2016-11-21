@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Devices.Geolocation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -30,8 +31,15 @@ namespace Spinder
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            var msg = new MessageDialog("Content", "Title");
+            Geolocator geo = new Geolocator();
+            Geoposition pos = await geo.GetGeopositionAsync();
+            double lat = pos.Coordinate.Point.Position.Latitude;
+            double longt = pos.Coordinate.Point.Position.Longitude;
+
+            var msg = new MessageDialog("Content : Latitude : " + lat + " and Longitude : " + longt, "Title");
             await msg.ShowAsync();
+
+            this.Frame.Navigate(typeof(Register));
         }
     }
 }
