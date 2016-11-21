@@ -7,14 +7,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="Beige">
         
-        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="186,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="38" Width="232"/>
-        <TextBox x:Name="first_name" HorizontalAlignment="Left" Margin="186,177,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="35" Width="232" />
-        <TextBox x:Name="last_name" HorizontalAlignment="Left" Margin="186,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="35" Width="232"/>
-        <Button x:Name="submit" Content="Button" HorizontalAlignment="Left" Margin="353,387,0,0" VerticalAlignment="Top" Click="button_Click"/>
-        <PasswordBox x:Name="password" PasswordChanged="password_PasswordChanged" HorizontalAlignment="Left" Margin="186,257,0,0" VerticalAlignment="Top" Width="232"/>
-        <TextBlock x:Name="status" HorizontalAlignment="Left" Margin="186,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="186,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="27" Width="232"/>
+        <TextBox x:Name="first_name" HorizontalAlignment="Left" Margin="186,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="232" />
+        <TextBox x:Name="last_name" HorizontalAlignment="Left" Margin="186,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="232"/>
+        <PasswordBox x:Name="password" PasswordChanged="password_PasswordChanged" HorizontalAlignment="Left" Margin="186,318,0,0" VerticalAlignment="Top" Width="232"/>
+        <Button x:Name="submit" Content="Register" HorizontalAlignment="Left" Margin="344,388,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <TextBlock x:Name="status" HorizontalAlignment="Left" Margin="186,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="849,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="password_label" HorizontalAlignment="Left" Margin="186,298,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lastname_label" HorizontalAlignment="Left" Margin="186,234,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="firstname_label" HorizontalAlignment="Left" Margin="186,171,0,0" TextWrapping="Wrap" Text="Fisrt Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="username_label" HorizontalAlignment="Left" Margin="186,114,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

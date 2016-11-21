@@ -203,3 +203,13 @@ C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\bin\x86\Debug\Newtonsoft
 C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Microsoft.WindowsAzure.Mobile\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
 C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Spinder.csproj.GenerateResource.Cache
 C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\bin\x86\Debug\LoginPage.xbf
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\LoginPage.g.i.cs
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\LoginPage.g.cs
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\LoginPage.xaml
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\LoginPage.xbf
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\bin\x86\Debug\HomePage.xbf
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\HomePage.g.i.cs
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\HomePage.g.cs
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\HomePage.xaml
+C:\Users\Harshith Goka\Projects\spinder\Spinder\Spinder\obj\x86\Debug\HomePage.xbf

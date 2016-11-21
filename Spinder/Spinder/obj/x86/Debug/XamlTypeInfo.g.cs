@@ -132,17 +132,25 @@ namespace Spinder.Spinder_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "Spinder.MainPage";
+            _typeNameTable = new string[8];
+            _typeNameTable[0] = "Spinder.HomePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Spinder.Register";
+            _typeNameTable[3] = "Spinder.LoginPage";
+            _typeNameTable[4] = "System.Threading.Tasks.Task";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "Spinder.MainPage";
+            _typeNameTable[7] = "Spinder.Register";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::Spinder.MainPage);
+            _typeTable = new global::System.Type[8];
+            _typeTable[0] = typeof(global::Spinder.HomePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Spinder.Register);
+            _typeTable[3] = typeof(global::Spinder.LoginPage);
+            _typeTable[4] = typeof(global::System.Threading.Tasks.Task);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::Spinder.MainPage);
+            _typeTable[7] = typeof(global::Spinder.Register);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -177,8 +185,10 @@ namespace Spinder.Spinder_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Spinder.MainPage(); }
-        private object Activate_3_Register() { return new global::Spinder.Register(); }
+        private object Activate_0_HomePage() { return new global::Spinder.HomePage(); }
+        private object Activate_3_LoginPage() { return new global::Spinder.LoginPage(); }
+        private object Activate_6_MainPage() { return new global::Spinder.MainPage(); }
+        private object Activate_7_Register() { return new global::Spinder.Register(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -190,9 +200,9 @@ namespace Spinder.Spinder_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Spinder.MainPage
+            case 0:   //  Spinder.HomePage
                 userType = new global::Spinder.Spinder_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -205,9 +215,34 @@ namespace Spinder.Spinder_XamlTypeInfo
                 xamlType = new global::Spinder.Spinder_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Spinder.Register
+            case 3:   //  Spinder.LoginPage
                 userType = new global::Spinder.Spinder_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Register;
+                userType.Activator = Activate_3_LoginPage;
+                userType.AddMemberName("Helpers");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  System.Threading.Tasks.Task
+                userType = new global::Spinder.Spinder_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Object
+                xamlType = new global::Spinder.Spinder_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Spinder.MainPage
+                userType = new global::Spinder.Spinder_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  Spinder.Register
+                userType = new global::Spinder.Spinder_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_Register;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -216,11 +251,26 @@ namespace Spinder.Spinder_XamlTypeInfo
         }
 
 
+        private object get_0_LoginPage_Helpers(object instance)
+        {
+            var that = (global::Spinder.LoginPage)instance;
+            return that.Helpers;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::Spinder.Spinder_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::Spinder.Spinder_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "Spinder.LoginPage.Helpers":
+                userType = (global::Spinder.Spinder_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Spinder.LoginPage");
+                xamlMember = new global::Spinder.Spinder_XamlTypeInfo.XamlMember(this, "Helpers", "System.Threading.Tasks.Task");
+                xamlMember.Getter = get_0_LoginPage_Helpers;
+                xamlMember.SetIsReadOnly();
+                break;
+            }
             return xamlMember;
         }
     }

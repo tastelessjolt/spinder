@@ -31,12 +31,20 @@ namespace Spinder
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-        //    Geolocator geo = new Geolocator();
-        //    Geoposition pos = await geo.GetGeopositionAsync();
-        //    double lat = pos.Coordinate.Point.Position.Latitude;
-        //    double longt = pos.Coordinate.Point.Position.Longitude;
+            //    Geolocator geo = new Geolocator();
+            //    Geoposition pos = await geo.GetGeopositionAsync();
+            //    double lat = pos.Coordinate.Point.Position.Latitude;
+            //    double longt = pos.Coordinate.Point.Position.Longitude;
+            Button b = (Button)sender;
 
-            this.Frame.Navigate(typeof(Register));
+            if (b.Name == "register")
+            {
+                this.Frame.Navigate(typeof(Register));
+            }
+            else if (b.Name == "login")
+            {
+                this.Frame.Navigate(typeof(LoginPage));
+            }
         }
     }
 }

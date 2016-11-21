@@ -7,13 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
-        </Grid.ColumnDefinitions>
-        <Button Click="Button_Click" Content="Button" Margin="345,368,0,302" Height="50" Width="170">
+    <Grid Background="Beige">
+        <Button Name="register" Click="Button_Click" Content="Register" Margin="552,347,0,323" Height="50" Width="170">
         </Button>
-        <Button Click="Button_Click" Content="Button" Margin="345,263,0,407" Height="50" Width="170"/>
+        <Button Name="login" Click="Button_Click" Content="Login" Margin="552,237,558,433" Height="50" Width="170"/>
+        <TextBlock x:Name="textBlock" Margin="421,99,407,0" TextWrapping="Wrap" Text="Get Started" VerticalAlignment="Top" Height="101" Width="452" FontSize="72"/>
     </Grid>
 </Page>

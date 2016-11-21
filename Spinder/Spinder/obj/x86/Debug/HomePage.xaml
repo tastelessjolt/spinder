@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="Spinder.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Spinder"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <RelativePanel>
+
+            <Button x:ConnectionId='4' Width="60" Height="45"                            Name="hamburgerbtn" FontFamily="Segoe MDL2 Assets" Content="" Margin="0,30,0,0"></Button>
+            <TextBlock x:ConnectionId='5' FontSize="23px" x:Name="nametitle" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="594" Margin="83,35,-476,0"/>
+
+        </RelativePanel>
+
+
+        <SplitView x:ConnectionId='1' Grid.Row="1" Name="mysplitview1" DisplayMode="CompactOverlay" OpenPaneLength="250" CompactPaneLength="60">
+            <SplitView.Pane>
+                <ListBox>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="30" FontFamily="Segoe MDL2 Assets" Text=""></TextBlock>
+                            <TextBlock Margin="30,0,0,0" FontSize="20" Text="Find Match"></TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="30" FontFamily="Segoe MDL2 Assets" Text=""></TextBlock>
+                            <TextBlock Margin="30,0,0,0" FontSize="20" Text="Profile"></TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="30" FontFamily="Segoe MDL2 Assets" Text=""></TextBlock>
+                            <TextBlock Margin="30,0,0,0" FontSize="20" Text="Logout"></TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+            <ListBox x:ConnectionId='3' Margin="0,0" HorizontalAlignment="Left" Width="200" x:Name="interestList"                                                 >
+
+            </ListBox>
+
+        </SplitView>
+        <ListBox x:ConnectionId='2' Margin="265,0,0,0" HorizontalAlignment="Left" Grid.Row="1" x:Name="peopleList" Visibility="Collapsed" Width="268">
+
+        </ListBox>
+    </Grid>
+
+</Page>
+
